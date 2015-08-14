@@ -1,10 +1,8 @@
 <?php
-include_once('../../../../pmvc/pmvc/include.php');
-\PMVC\setPlugInFolder('../../../../pmvc-plugin');
-include_once('../../../../pmvc-plugin/view/src/ViewEngine.php');
-include_once('../../../../pmvc-plugin/view/src/Template.php');
+include_once('../../../../autoload.php');
+PMVC\Load::mvc();
 use \PMVC\ActionController as mvc;
-$envfile = '../../.env';
+$envfile = '../../../../../.env';
 if (is_file($envfile)) {
     $env = array('envfile'=>$envfile);
 } else {
