@@ -1,0 +1,14 @@
+{
+    "name": "pmvc-app/swagger_ui",
+    "description": "pure swagger ui",
+    "type": "library",
+    "keywords": ["swagger", "pmvc", "plug-in"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hill",
+            "email": "hill@kimo.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
