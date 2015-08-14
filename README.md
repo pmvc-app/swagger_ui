@@ -1,6 +1,6 @@
 [![Latest Stable Version](https://poser.pugx.org/pmvc-app/swagger_ui/v/stable)](https://packagist.org/packages/pmvc-app/swagger_ui) 
 [![Latest Unstable Version](https://poser.pugx.org/pmvc-app/swagger_ui/v/unstable)](https://packagist.org/packages/pmvc-app/swagger_ui) 
-[![Build Status](https://travis-ci.org/pmvc-app/swagger_ui.svg?branch=master)](https://travis-ci.org/pmvc-app/swagger_ui)
+
 [![License](https://poser.pugx.org/pmvc-app/swagger_ui/license)](https://packagist.org/packages/pmvc-app/swagger_ui)
 [![Total Downloads](https://poser.pugx.org/pmvc-app/swagger_ui/downloads)](https://packagist.org/packages/pmvc-app/swagger_ui) 
 
