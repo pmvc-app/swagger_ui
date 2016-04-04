@@ -10,6 +10,7 @@ $b->addAction('css', [${_INIT_CONFIG}[_CLASS],'asset']);
 $b->addAction('lib', [${_INIT_CONFIG}[_CLASS],'asset']);
 $b->addAction('swagger-ui.min.js', [${_INIT_CONFIG}[_CLASS],'asset']);
 $b->addAction('fonts', [${_INIT_CONFIG}[_CLASS],'asset']);
+$b->addAction('images', [${_INIT_CONFIG}[_CLASS],'asset']);
 
 $b->addForward('home', array(
     _PATH=>'index'
@@ -37,17 +38,8 @@ class SwaggerUiAction extends PMVC\Action
         $pathInfo = $url->getPathInfo();
         $path = str_replace('/'.$app.'/', '', $pathInfo);
         $asset = __DIR__.'/'.'themes/asset/'.$path;
-        $action = $c->getAppAction(); 
-        switch ($action) {
-            case 'css':
-                header("Content-type: text/css");
-                break;
-            default:
-                header('Content-Type: application/javascript');
-                break;
-                
-        }
-        readfile($asset);
+        $fs = \PMVC\plug('file_list');
+        $fs->dump($asset);
     }
 }
 
